@@ -1,0 +1,15 @@
+.mianh{
+  height:80px;
+  background-color: antiquewhite;
+  color:black;
+  box-shadow: 0px 0px 5px 5px gray;
+  display:flex;
+  
+}
+ul{
+  display: flex;
+  justify-content: space-around;
+}
+li{
+  list-style-type: none;
+}
