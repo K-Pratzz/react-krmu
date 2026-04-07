@@ -1,13 +1,21 @@
 import React from 'react'
 import Navbar from './Navbar'
 import maincomp, { about } from  './assets/components/about'
+import Count from './assets/components/Count';
+import Parent from './propsPassing/Parent';
+import IfElseComp from './ConceptComp/IfElseComp';
+import UseState from './hooks/UseState';
 const App = () => {
   console.log(about(10,3));
   console.log(maincomp(10,3));
+  
+
   return (
     <>
-    <Navbar/>
-    <div>This is App component</div>
+    <Parent />
+    <IfElseComp/>
+    <UseState/>
+    
     </>
   )
 }
