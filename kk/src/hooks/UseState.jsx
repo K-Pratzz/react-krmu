@@ -1,13 +1,12 @@
 import React from 'react'
 import { useState } from 'react';
-
 const UseState = () => {
   const [count, setCount] = useState(0);
   const [dec,setDec]=useState(10);
   return (
     <div>
       <p>Count: {count}</p>
-      <button onClick={() => setCount(count + 1)}>
+      <button onClick={() => setCount((prev)=>prev+1)}>
         Increment
       </button>
       <p>Count d : {dec}</p>
@@ -18,5 +17,4 @@ const UseState = () => {
     </div>
   )
 }
-
 export default UseState

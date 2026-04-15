@@ -5,6 +5,11 @@ import Count from './assets/components/Count';
 import Parent from './propsPassing/Parent';
 import IfElseComp from './ConceptComp/IfElseComp';
 import UseState from './hooks/UseState';
+import MultiCounter from './hooks/MultiCounter';
+import Login from './hooks/Login';
+import Theme from './hooks/Theme';
+import Name from './hooks/Name';
+import Todo from './hooks/Todo';
 const App = () => {
   console.log(about(10,3));
   console.log(maincomp(10,3));
@@ -12,10 +17,10 @@ const App = () => {
 
   return (
     <>
-    <Parent />
-    <IfElseComp/>
-    <UseState/>
-    
+    <Login/>
+    <Theme/>
+    <Name/>
+    <Todo/>
     </>
   )
 }

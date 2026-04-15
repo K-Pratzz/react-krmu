@@ -33,3 +33,4 @@ only call hooks from react functions
 
 Note : we can't re render or update the value declared in normal js variable
 
+setCount((prev)=>) : here prev target the latest previous value of the state..
