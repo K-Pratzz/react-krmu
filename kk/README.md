@@ -34,3 +34,6 @@ only call hooks from react functions
 Note : we can't re render or update the value declared in normal js variable
 
 setCount((prev)=>) : here prev target the latest previous value of the state..
+controlled component and un controlled.
+user gives value in text / pass..so we use name that stores the value..no need of value..but when we use checkbox..user is not entering so we need to use value there/..value={name}
+

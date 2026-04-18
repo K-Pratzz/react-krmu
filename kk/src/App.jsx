@@ -10,6 +10,9 @@ import Login from './hooks/Login';
 import Theme from './hooks/Theme';
 import Name from './hooks/Name';
 import Todo from './hooks/Todo';
+import Cart from './hooks/Cart';
+import Like from './hooks/Like';
+import Wishlist from './hooks/Wishlist';
 const App = () => {
   console.log(about(10,3));
   console.log(maincomp(10,3));
@@ -17,10 +20,7 @@ const App = () => {
 
   return (
     <>
-    <Login/>
-    <Theme/>
-    <Name/>
-    <Todo/>
+    <Wishlist/>
     </>
   )
 }
