@@ -1,11 +1,16 @@
 import React from 'react'
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 
 const MultiCounter = () => {
   const[count,setCount]   =  useState([0,0])
   const increment=(index)=>{
     setCount([...count.slice(0,index),count[index]+1,...count.slice(index+1)])  
   }
+   useEffect(()=>{
+    console.log("button clicked")
+    return (()=>console.log("unmount"))
+   },[count])
+   console.log("render")
   const decrement=(index)=>{
     setCount([...count.slice(0,index),count[index]-1,...count.slice(index+1)])
   }

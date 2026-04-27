@@ -37,3 +37,6 @@ setCount((prev)=>) : here prev target the latest previous value of the state..
 controlled component and un controlled.
 user gives value in text / pass..so we use name that stores the value..no need of value..but when we use checkbox..user is not entering so we need to use value there/..value={name}
 
+use effect : is used to manag all the methods of life cycle, will take parameters one call back function and other dependency array
+if the dependency array is empty, it will mount only once, when the page reload for the fist time
+render..mount..unmount.. //windowresize from handling and use efffect
