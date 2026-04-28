@@ -1,12 +1,24 @@
-import React from 'react';
+import React from 'react'
+import Data from '../Data'
+import { Link } from 'react-router-dom';
 
 const Hollywood = () => {
+
+  const HollywoodData = Data.filter((item)=>item.category==="Hollywood");
+  console.log(HollywoodData)
+
   return (
     <div>
-      <h1>Hollywood Page</h1>
+      {HollywoodData.map((hollydata)=>(
+        <>
+        <Link to={`/details/${hollydata.id}`}>
+          <h1>{hollydata.title}</h1>
+         <img src={hollydata.img_url}/>
+         </Link>
+         </>
+      ))}
     </div>
-  );
-};
+  )
+}
 
-// THIS IS THE MISSING LINE:
-export default Hollywood;
+export default Hollywood

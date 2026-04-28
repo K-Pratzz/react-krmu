@@ -1,12 +1,24 @@
-import React from 'react';
+import React from 'react'
+import Data from '../Data'
+import { Link } from 'react-router-dom';
 
 const Food = () => {
+
+  const FoodData = Data.filter((item)=>item.category==="Food");
+  console.log(FoodData)
+
   return (
     <div>
-      <h1>Food Page</h1>
+      {FoodData.map((fooddata)=>(
+        <>
+        <Link to={`/details/${fooddata.id}`}>
+          <h1>{fooddata.title}</h1>
+         <img src={fooddata.img_url}/>
+         </Link>
+         </>
+      ))}
     </div>
-  );
-};
+  )
+}
 
-// THIS IS THE MISSING LINE:
-export default Food;
+export default Food
